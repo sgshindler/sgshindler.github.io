@@ -1,11 +1,11 @@
 ---
-title: "Paper Title Number 1"
+title: "Heat transfer and mixing in initiated chemical vapor deposition analyzed by in situ gas composition sensing"
 collection: publications
 category: manuscripts
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
+permalink: https://doi.org/10.1116/6.0004995
+excerpt: 'When interpreting or modeling initiated chemical vapor deposition (iCVD) data, assumptions about vapor phase heat and mass transport are almost always required. However, empirically verifying such assumptions is difficult and rarely attempted. To address this gap, we utilize in situ gas composition measurements and heat transfer experiments to validate theoretical and computational models of the iCVD system.'
+date: 2025-12-31
+venue: 'J. Vac. Sci. Technol. A'
 slidesurl: 'https://academicpages.github.io/files/slides1.pdf'
 paperurl: 'https://academicpages.github.io/files/paper1.pdf'
 bibtexurl: 'https://academicpages.github.io/files/bibtex1.bib'
