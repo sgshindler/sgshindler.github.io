@@ -12,26 +12,3 @@ I am a Chemical Engineer with expertise in continuum mechanics, surface science,
 I have lots of side projects and schemes which I wanted to host online, so those are on this website. Thanks for visiting!
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-end
-
