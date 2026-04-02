@@ -1,4 +1,3 @@
-
 ---
 title: "Dendritic Defects in iCVD"
 collection: publications
