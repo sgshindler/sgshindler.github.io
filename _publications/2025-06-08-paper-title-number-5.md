@@ -1,11 +1,11 @@
 ---
-title: "Paper Title Number 5, with math $$E=mc^2$$"
+title: "Improving Compositional Analysis of Copolymer Thin Films using a Simple Density Correction"
 collection: publications
 category: conferences
 permalink: /publication/2024-02-17-paper-title-number-4
-excerpt: 'This paper is about a famous math equation, $$E=mc^2$$'
-date: 2024-02-17
-venue: 'GitHub Journal of Bugs'
+excerpt: 'I use ellipsometry to correct for density variation in copolymer composition analysis from FTIR when only one of the copolymers has detectible peaks"
+date: 2023-11-05
+venue: 'AVS69 Annual Meeting'
 paperurl: 'https://academicpages.github.io/files/paper3.pdf'
 citation: 'Your Name, You. (2024). &quot;Paper Title Number 3.&quot; <i>GitHub Journal of Bugs</i>. 1(3).'
 ---
