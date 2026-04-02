@@ -1,11 +1,11 @@
 ---
-title: "Paper Title Number 3"
+title: "Prevention and characterization of thin film defects induced by contaminant aggregates in initiated chemical vapor deposition"
 collection: publications
 category: manuscripts
 permalink: /publication/2015-10-01-paper-title-number-3
-excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
-date: 2015-10-01
-venue: 'Journal 1'
+excerpt: 'As initiated Chemical Vapor Deposition (iCVD) finds increasing application in precision industries like electronics and optics, defect prevention will become critical. While studies of non-ideal morphology exist in the iCVD literature, no studies investigate the role of defects. To address this knowledge gap, we show that the buildup of short-chain polymers or oligomers during normal operation of an iCVD reactor can lead to defects that compromise film integrity. '
+date: 2024-04-14
+venue: 'The Journal of Chemical Physics'
 slidesurl: 'https://academicpages.github.io/files/slides3.pdf'
 paperurl: 'https://academicpages.github.io/files/paper3.pdf'
 citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
