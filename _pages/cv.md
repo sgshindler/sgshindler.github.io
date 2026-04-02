@@ -17,14 +17,11 @@ Education
 Experience
 ======
 **Fall 2025 | Technical Lead, Ultinat Inc., Ithaca, NY (Remote)**
-* Conducted over 60 customer discovery interviews for market validation research
-* technical expertise in polymer chemistry
-* NSF I-Corps program
-* Agrochemical product development
+* Conducted over 60 customer discovery interviews for market validation research for the NSF I-Corps program
+* Leveraged technical expertise in polymer chemistry for agrochemical product development
 
 **Summer 2025 | AI Trainer, Materials Science Expert, Handshake MOVE (Remote)**
-* Designed test questions for large language models to improve performance
-* Materials Science domain
+* Designed test questions for large language models to improve performance under the materials science domain
 
 **Winter 2024 - Spring 2025 | Post Doctoral Lab Support in Yang Lab, Cornell University, Ithaca, NY**
 * Built a custom Initiated Chemical Vapor Deposition (iCVD) Reactor
@@ -46,24 +43,12 @@ Experience
 
 **Spring 2016 - Fall 2018 | Researcher, Aston Research Group, University of Idaho, Moscow, ID**
 * Lead self-guided surface science and polymer research
-* wet chemistry
-* spectral analysis and manipulation
-* principal components analysis for reaction product characterization
 * Demonstrate root causes of a hydrophobic surface transition to be a low temperature degradation reaction
 
 **Summer 2018 | Engineering Intern, Glanbia Nutritionals, Corona, CA**
-* Recommended procedures to decrease startup time based on residence time distribution models
-* Discovered and provided recommendations to mitigate negative impacts of improperly installed equipment
-* Recommended optimization of cooling water flow rate for positive displacement, centrifugal and vacuum pumps totaling around 1000 gal per day of possible water savings
-* Wrote a preventative maintenance schedule for a piece of equipment and trained operators
-* Identified key water losses through process analysis and provided mitigation recommendations based on cooling water optimization, misattribution of water losses and incorrect installation
-* Assessed yield losses for a high profit margin customer using historical data
-* Compiled data to trend bottle filling malfunctions over time
-* Acted as project lead in the project engineer’s absence, coordinating with contractors to ensure work was safe and in accordance with agreed upon deliverables
-* Provided suggestions to increase fill efficiency during a bottle redesign based on observed incompatibility with process equipment
-* Discovered incorrect installation of a vacuum pump indicating available savings of up to 15000 gallons per day while operating
-* Determined meaning of flow totalizer readings and corrected a misattribution of water losses
-* Provided recommendations for proper chemical storage
+* Coordinated with contractors to ensure work was safe and in accordance with agreed upon deliverables
+* Discovered improperly installed equipment which caused significant yield losses and downtime
+* Wrote a preventive maintenance schedule for a piece of equipment and trained operators
 
 **Summer 2016 | Biological Science Aide, USDA-ARS, Adams, OR**
 * Analyzed near infrared (NIR) spectra in De Light and Excel using chemometric techniques to calibrate an on-combine protein sensor for wheat
@@ -99,18 +84,22 @@ Service and leadership
 **Summer 2025 - Fall 2025 | Olympic National Park, Port Angeles, WA**
 * Volunteered on mountain lakes biological survey for Lake Lacrosse
 
+**Fall 2020 - Winter 2025 | Chemical Engineering Graduate Student Association (Cornell)**
+* Served as a representative for PhD students during all years of PhD
+* Organized events over the COVID-19 pandemic to facilitate community in the department
+* Served as vice president of the organization during the 2022/2023 academic year
+* Served as president during the 2023/2024 academic yearlocal businesses and non-profits
+
+**Fall 2020 - Spring 2020 | Cornell Contra Dance Graduate Student Association**
+* Act as treasurer and helped coordinate dances
+
 **Fall 2015 - Summer 2019 | University of Idaho Humanitarian Engineering Corps**
 * Acted as secretary by taking meeting minutes and coordinating club events and fundraisers
 * Acted as fundraising chair, taking responsibility for raising sufficient funds to travel
 * Implemented water system development in Carani, Bolivia
 * Coordinated efforts to increase local service
 
-**Fall 2020 - Spring 2020 | Cornell Contra Dance Graduate Student Association**
-* Act as treasurer and help coordinate dances
 
-**Fall 2020 - Winter 2025 | Chemical Engineering Graduate Student Association (Cornell)**
-* Served as a representative for PhD students during all years of PhD
-* Organized events over the COVID-19 pandemic to facilitate community in the department
-* Served as vice president of the organization during the 2022/2023 academic year
-* Served as president during the 2023/2024 academic yearlocal businesses and non-profits
+
+
 
