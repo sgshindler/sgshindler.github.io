@@ -7,7 +7,7 @@ excerpt: 'While initiated chemical vapor deposition (iCVD) has been used in a wi
 date: 2025-05-05
 venue: 'Langmuir'
 paperurl: 'https://academicpages.github.io/files/paper3.pdf'
-citation:  'Shindler, Simon, and Rong Yang. &quot;Analysis of the Vapor Phase Dynamics during iCVD: Free Radical Initiation by Tert-Butyl Peroxide.&quot; <i>Langmuir<i> 41, no. 19 (2025): 12228–44.'
+citation:  'Shindler, Simon, and Rong Yang. &quot;Analysis of the Vapor Phase Dynamics during iCVD: Free Radical Initiation by Tert-Butyl Peroxide.&quot; <i>Langmuir</i> 41, no. 19 (2025): 12228–44.'
 ---
 
 The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
