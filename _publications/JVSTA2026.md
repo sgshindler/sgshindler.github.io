@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: /publication/JVSTA2026
 excerpt: 'When interpreting or modeling initiated chemical vapor deposition (iCVD) data, assumptions about vapor phase heat and mass transport are almost always required. However, empirically verifying such assumptions is difficult and rarely attempted. To address this gap, we utilize in situ gas composition measurements and heat transfer experiments to validate theoretical and computational models of the iCVD system.'
-date: 2025-12-31
+date: 2026-01-01
 venue: 'J. Vac. Sci. Technol. A'
 paperurl: 'https://sgshindler.github.io/files/JVSTA2026.pdf'
 bibtexurl: 'https://sgshindler.github.io/files/JVSTA2026.bibtex'
