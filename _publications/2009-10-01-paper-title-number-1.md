@@ -6,7 +6,7 @@ permalink: https://doi.org/10.1116/6.0004995
 excerpt: 'When interpreting or modeling initiated chemical vapor deposition (iCVD) data, assumptions about vapor phase heat and mass transport are almost always required. However, empirically verifying such assumptions is difficult and rarely attempted. To address this gap, we utilize in situ gas composition measurements and heat transfer experiments to validate theoretical and computational models of the iCVD system.'
 date: 2025-12-31
 venue: 'J. Vac. Sci. Technol. A'
-paperurl: 'https://academicpages.github.io/files/2026 Simon JVST-A.pdf'
+paperurl: 'https://academicpages.github.io/files/JVSTA2026.pdf'
 bibtexurl: 'https://academicpages.github.io/files/bibtex1.bib'
 citation: 'Simon Shindler, and Rong Yang. &quot;Heat transfer and mixing in initiated chemical vapor deposition analyzed by in situ gas composition sensing.&quot; <i>J. Vac. Sci. Technol. A</i> 44 no. 1 (2026): 013404.'
 ---
