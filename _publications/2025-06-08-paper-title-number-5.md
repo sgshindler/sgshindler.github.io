@@ -6,7 +6,7 @@ permalink: /publication/2024-02-17-paper-title-number-4
 excerpt: 'I use ellipsometry to correct for density variation in copolymer composition analysis from FTIR when only one of the copolymers has detectible peaks'
 date: 2023-11-05
 venue: 'AVS69 Annual Meeting'
-slidesurl: 'https://academicpages.github.io/files/paper3.pdf'
+slidesurl: 'https://sgshindler.github.io/files/paper3.pdf'
 citation: 'Simon Shindler (2023). &quot;Improving Compositional Analysis of Copolymer Thin Films using a Simple Density Correction.&quot; <i>AVS69 Annual Meeting</i>.'
 ---
 
