@@ -7,7 +7,7 @@ excerpt: 'When interpreting or modeling initiated chemical vapor deposition (iCV
 date: 2025-12-31
 venue: 'J. Vac. Sci. Technol. A'
 paperurl: 'https://sgshindler.github.io/files/JVSTA2026.pdf'
-bibtexurl: 'https://sgshindler.github.io/files/bibtex1.bib'
+bibtexurl: 'https://sgshindler.github.io/files/JVSTA2026.bibtex'
 citation: 'Simon Shindler, and Rong Yang. &quot;Heat transfer and mixing in initiated chemical vapor deposition analyzed by in situ gas composition sensing.&quot; <i>J. Vac. Sci. Technol. A</i> 44 no. 1 (2026): 013404.'
 ---
 The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
