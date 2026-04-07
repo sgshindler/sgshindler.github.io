@@ -7,6 +7,7 @@ excerpt: 'As initiated Chemical Vapor Deposition (iCVD) finds increasing applica
 date: 2024-04-14
 venue: 'The Journal of Chemical Physics'
 paperurl: 'https://sgshindler.github.io/files/JCP2024.pdf'
+bibtexurl: 'https://sgshindler.github.io/files/JCP2024.bibtex'
 citation: 'Shindler, Simon, Trevor Franklin, and Rong Yang. &quot;Prevention and Characterization of Thin Film Defects Induced by Contaminant Aggregates in Initiated Chemical Vapor Deposition.&quot; <i>Journal of Chemical Physics</i>, 2024.'
 ---
 
