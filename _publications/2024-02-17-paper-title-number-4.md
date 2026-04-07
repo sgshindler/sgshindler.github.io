@@ -7,6 +7,7 @@ excerpt: 'While initiated chemical vapor deposition (iCVD) has been used in a wi
 date: 2025-05-05
 venue: 'Langmuir'
 paperurl: 'https://sgshindler.github.io/files/Langmuir2025.pdf'
+bibtexurl: 'https://sgshindler.github.io/files/Langmuir2025.bib'
 citation:  'Shindler, Simon, and Rong Yang. &quot;Analysis of the Vapor Phase Dynamics during iCVD: Free Radical Initiation by Tert-Butyl Peroxide.&quot; <i>Langmuir</i> 41, no. 19 (2025): 12228–44.'
 ---
 
