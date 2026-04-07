@@ -2,7 +2,7 @@
 title: "Improving Compositional Analysis of Copolymer Thin Films using a Simple Density Correction"
 collection: publications
 category: conferences
-permalink: /publication/2024-02-17-paper-title-number-4
+permalink: /publication/AVS2023Poster
 excerpt: 'I use ellipsometry to correct for density variation in copolymer composition analysis from FTIR when only one of the copolymers has detectible peaks'
 date: 2023-11-05
 venue: 'AVS69 Annual Meeting'
