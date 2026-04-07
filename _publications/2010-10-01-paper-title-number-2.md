@@ -7,6 +7,7 @@ excerpt: 'The post-synthesis surface reaction of vapor-deposited polymer thin fi
 date: 2023-01-09
 venue: 'Langmuir'
 paperurl: 'https://sgshindler.github.io/files/Langmuir2023.pdf'
+bibtexurl: 'https://sgshindler.github.io/files/Langmuir2023.bib'
 citation: 'Simon Shindler, and Rong Yang. &quot;Hydrolysis of Poly(fluoroacrylate) Thin Films Synthesized from the Vapor Phase &quot; <i>Langmuir</i> 39 no. 3 (2023): 1215-1226'
 ---
 
