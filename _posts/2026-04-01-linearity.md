@@ -14,7 +14,7 @@ $$y=f(x)$$
 
 where $y$ is the dependent variable, $x$ is the independent variable and $f(x)$ is a continuous *non-linear* function. Maybe it looks like this:
 
-![Alt text](image_path_or_url)
+![Image not available](https://sgshindler.github.io/images/blog_posts.png)
 
 If you shrink the range of x-values, $f(x)$ will always get closer and closer to a straight line.
 
