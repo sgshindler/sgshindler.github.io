@@ -12,11 +12,11 @@ If given some data, the first relationship a scientist or engineer will propose 
 
 $$y=f(x)$$
 
-where $y$ is the dependent variable, $x$ is the independent variable and $f(x)$ is a continuous *non-linear* function. Maybe it looks like this:
+where $$y$$ is the dependent variable, $$x$$ is the independent variable and $$f(x)$$ is a continuous *non-linear* function. Maybe it looks like this:
 
 ![Image not available](https://sgshindler.github.io/images/blog_posts/Linearity1.png)
 
-If you shrink the range of x-values, $f(x)$ will always get closer and closer to a straight line.
+If you shrink the range of $$x$$-values, $$f(x)$$ will always get closer and closer to a straight line.
 
 ![Image not available](https://sgshindler.github.io/images/blog_posts/Linearity2.png)
 
