@@ -18,15 +18,15 @@ where $y$ is the dependent variable, $x$ is the independent variable and $f(x)$ 
 
 If you shrink the range of x-values, $f(x)$ will always get closer and closer to a straight line.
 
-![Alt text](image_path_or_url) 
+![Image not available](https://sgshindler.github.io/images/blog_posts/Linearity2.png)
 
 more...
 
-![Alt text](image_path_or_url)
+![Image not available](https://sgshindler.github.io/images/blog_posts/Linearity3.png)
 
 a little bit more...
 
-![Alt text](image_path_or_url)
+![Image not available](https://sgshindler.github.io/images/blog_posts/Linearity4.png)
 
 Calculus is largely based on the idea that if you consider an infinitesimally narrow domain of x-values, then over that domain, the function actually *is* a straight line. Math people make a big stink about things being *equal*. The limit of infinitesimal domain is the "linear limit". The linearity principle applies to any continuous function, not just functions of two variables. Additionally, while it's not the topic of this post, the idea of a linear limit is fundamental to the concept of the "tangent space" which underpins some of the most important and advanced mathematical physics that exists. A huge amount of advanced math is simply understanding linearity in different dimensions and contexts.
 
