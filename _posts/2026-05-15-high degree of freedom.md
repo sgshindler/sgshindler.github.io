@@ -45,7 +45,282 @@ $${d^2y_1}/{dt^2} = cd-fa+(ce-fb)y_1+(f+b){dy_1}/{dt}$$
 
 Solving this equation gives us a decaying oscillation. 
 
+# Interactive Differential Equation Plot for Academic Pages
+
+You can drop the following directly into a Markdown post in the Academic Pages template.
+
+It uses:
+
+* plain HTML
+* Plotly.js
+* a small numerical integrator in JavaScript
+* sliders for `a`, `b`, and `c`
+
+The equation being solved is:
+
+$$
+\frac{d^2 y}{dt^2} = a + by + c\frac{dy}{dt}
+$$
+
+---
+
+```markdown
+---
+title: "Interactive Differential Equation Explorer"
+date: 2026-05-14
+---
+
 <style>
+.controls {
+  margin-bottom: 1rem;
+}
+
+.control {
+  margin: 0.5rem 0;
+}
+
+label {
+  display: inline-block;
+  width: 20px;
+}
+
+.value {
+  display: inline-block;
+  width: 60px;
+  font-family: monospace;
+}
+</style>
+
+<div class="controls">
+
+  <div class="control">
+    <label>a</label>
+    <input type="range" id="a" min="-5" max="5" step="0.1" value="0">
+    <span class="value" id="aVal">0</span>
+  </div>
+
+  <div class="control">
+    <label>b</label>
+    <input type="range" id="b" min="-5" max="5" step="0.1" value="-1">
+    <span class="value" id="bVal">-1</span>
+  </div>
+
+  <div class="control">
+    <label>c</label>
+    <input type="range" id="c" min="-5" max="5" step="0.1" value="0">
+    <span class="value" id="cVal">0</span>
+  </div>
+
+</div>
+
+<div id="plot" style="width:100%;height:500px;"></div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<script>
+function solveODE(a, b, c) {
+
+  // Convert second-order ODE into two first-order equations:
+  // y1 = y
+  // y2 = dy/dt
+  //
+  // dy1/dt = y2
+  // dy2/dt = a + b*y1 + c*y2
+
+  const dt = 0.02;
+  const tMax = 20;
+
+  const t = [];
+  const y = [];
+
+  let y1 = 1.0;   // initial position
+  let y2 = 0.0;   // initial velocity
+
+  for (let time = 0; time <= tMax; time += dt) {
+
+    t.push(time);
+    y.push(y1);
+
+    // Euler integration
+    const dy1 = y2;
+    const dy2 = a + b * y1 + c * y2;
+
+    y1 += dt * dy1;
+    y2 += dt * dy2;
+  }
+
+  return { t, y };
+}
+
+function updatePlot() {
+
+  const a = parseFloat(document.getElementById('a').value);
+  const b = parseFloat(document.getElementById('b').value);
+  const c = parseFloat(document.getElementById('c').value);
+
+  document.getElementById('aVal').textContent = a;
+  document.getElementById('bVal').textContent = b;
+  document.getElementById('cVal').textContent = c;
+
+  const sol = solveODE(a, b, c);
+
+  const trace = {
+    x: sol.t,
+    y: sol.y,
+    mode: 'lines',
+    type: 'scatter',
+    name: 'y(t)'
+  };
+
+  const layout = {
+    title: 'Solution of y\\" = a + by + cy\\"',
+    xaxis: {
+      title: 't'
+    },
+    yaxis: {
+      title: 'y(t)'
+    },
+    margin: {
+      t: 50
+    }
+  };
+
+  Plotly.newPlot('plot', [trace], layout, {
+    responsive: true
+  });
+}
+
+['a', 'b', 'c'].forEach(id => {
+  document.getElementById(id).addEventListener('input', updatePlot);
+});
+
+updatePlot();
+</script>
+```
+
+---
+
+## What the coefficients do
+
+Your equation is:
+
+$$
+\frac{d^2 y}{dt^2} = a + by + c\frac{dy}{dt}
+$$
+
+Interpretation:
+
+* `a` adds a constant forcing term
+* `b` controls restoring vs runaway behavior
+
+  * negative `b` often gives oscillatory/stable dynamics
+  * positive `b` tends toward exponential growth
+* `c` acts like damping or anti-damping
+
+  * negative `c` damps motion
+  * positive `c` amplifies motion
+
+---
+
+## Suggested parameter experiments
+
+| Behavior              | a | b  | c    |
+| --------------------- | - | -- | ---- |
+| Harmonic oscillator   | 0 | -1 | 0    |
+| Damped oscillator     | 0 | -1 | -0.5 |
+| Unstable growth       | 0 | 1  | 0    |
+| Driven system         | 1 | -1 | -0.2 |
+| Explosive oscillation | 0 | -1 | 0.5  |
+
+---
+
+## Analytic solution approach (better for GitHub Pages)
+
+You're right — this equation is much cleaner to handle analytically.
+
+The differential equation
+
+$$
+\frac{d^2 y}{dt^2} = a + by + c\frac{dy}{dt}
+$$
+
+can be rewritten as
+
+$$
+y'' - cy' - by = a
+$$
+
+with characteristic equation
+
+$$
+r^2 - cr - b = 0
+$$
+
+whose roots are
+
+$$
+r_{1,2} = \frac{c \pm \sqrt{c^2 + 4b}}{2}
+$$
+
+This lets you compute the solution directly instead of numerically integrating it.
+<style>
+.control {
+  margin: 1rem 0;
+}
+
+.value {
+  display: inline-block;
+  width: 60px;
+  font-family: monospace;
+}
+</style>
+
+<div class="control">
+  a
+  <input type="range" id="a" min="-5" max="5" step="0.1" value="0">
+  <span class="value" id="aVal">0</span>
+</div>
+
+<div class="control">
+  b
+  <input type="range" id="b" min="-5" max="5" step="0.1" value="-1">
+  <span class="value" id="bVal">-1</span>
+</div>
+
+<div class="control">
+  c
+  <input type="range" id="c" min="-5" max="5" step="0.1" value="0">
+  <span class="value" id="cVal">0</span>
+</div>
+
+<div id="plot"></div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<script>
+function computeSolution(a, b, c) {
+
+  const t = [];
+  const y = [];
+
+  const disc = c*c + 4*b;
+
+  const y0 = 1;
+  const yp0 = 0;
+
+  for (let time = 0; time <= 20; time += 0.05) {
+
+    let val;
+
+    if (disc >= 0) {
+
+      const r1 = (c + Math.sqrt(disc))/2;
+      const r2 = (c - Math.sqrt(disc))/2;
+
+      const particular = (Math.abs(b) > 1e-8) ? -a/b : 0;
+
+      const C2 = (yp0 - r1*(y0 - particular)) / (r2 - r1);
+      const C1 = y0 - particular - C2;
 
       val =
         C1*Math.exp(r1*time) +
@@ -108,6 +383,7 @@ function updatePlot() {
 
 updatePlot();
 </script>
+```
 
 It turns out that no matter how non-linear you make your 1-DOF model, you can never obtain oscillations. Notably however, there are states in which this second order equation can give exponential behavior - part of why the exponential behavior is so common. So if a phenomenon is ever oscillatory, it's oscillatory because there are more than one degree of freedom in the underlying system. Similar insights can be made about higher-order systems. By understanding the degrees of freedom which underpin a system allows you to understand how it will behave. The number of degrees of freedom is the fundamental number which defines the qualitative behavior of the system.
 
