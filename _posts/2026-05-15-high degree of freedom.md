@@ -23,7 +23,7 @@ would be second order, becuase the highest derivative is a second derivative. In
 
 $$\frac{dy_1}{dt} = ay_2+b$$
 
-$$\frac{dy_2}{dt} = y_1
+$$\frac{dy_2}{dt} = y_1$$
 
 Now, we can see that these higher order differential equations correspond to higher degree of freedom systems. In this case, our second order system is a 2 degree of freedom system. You need to know the value of $$y_1$$ and $$y_2$$ in order to know the future state of the system. To explore the impact of these higher degree of freedom systems, let's look at the linear second order system. This system is,
 
