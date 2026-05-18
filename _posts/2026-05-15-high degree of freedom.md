@@ -7,43 +7,47 @@ tags:
 ---
 In the last post, I talked about the two factors which are required to give exponential behavor in a system. First, the system has to have only one degree of freedom, and second, the rate of change in the system needs to be linearly related to its state. The ubiquity of the linear limit explains why this second factor would be common, but the requirement that the system state be defined by one variable (one degree of freedom) is more abstract. Let's dig a little deeper into this idea of degrees of freedom.
 
-First of all, in the type of analysis I'm presenting here, we're using differential equations to model the systems under question. The study of differential equations is quite involved, and not something I can cover fully here. If my discussion feels limited, or if you find yourself having questions beyond this here is one option: 
+First of all, in the type of analysis I'm presenting here, we're using differential equations to model the systems under question. The study of differential equations is quite involved, and not something I can cover fully here. If my discussion feels limited, or if you find yourself having questions beyond this, the study of differential equations is extensive and remarkable - here is one option to explore: 
 
 https://www.math.unl.edu/~jlogan1/PDFfiles/New3rdEditionODE.pdf 
 
 Now, back to the problem at hand. One of the most important properties of a differential equation is it's "order". The order of a differential equation is simply the highest derivative. The differential equation which gives exponential behavior
 
-$${dy}/{dt} = ay+b$$
+$$\frac{dy}{dt} = ay+b$$
 
-is first order, becuase the highest derivative is a first derivative. An expression like:
+is first order, because the highest derivative is a first derivative. An expression like:
 
-$${d^2y}/{dt^2} = ay+b$$
+$$\frac{d^2y}{dt^2} = ay+b$$
 
-would be second order, becuase the highest derivative is a second derivative. In my discussion I'm going to use a useful property of differential equations to avoid any discussion of these higher order differential equations. Any higher order differential equation can be written as a system of first order differential equations. So the second order differential equation I just wrote out would now be,
+would be second order, becuase the highest derivative is a second derivative. In my discussion, I'm going to use a useful property of differential equations to avoid any discussion of these higher order differential equations and center it back on the degrees of freedom. Any higher order differential equation can be written as a system of first order differential equations. So the second order differential equation I just wrote out could also be written as,
 
-$${dy_1}/{dt} = ay_2+b$$
+$$\frac{dy_1}{dt} = ay_2+b$$
 
-$${dy_2}/{dt} = y_1$$
+$$\frac{dy_2}{dt} = y_1
 
-Now, we can see that these higher order differential equations correspond to higher degree of freedom systems. In this case, our second order system is a 2 degree of freedom system. You need to know the value of $$y_1$$ and $$y_2$$ in order to know the future state of the system. To explore this, let's look at the linear second order system, which becomes,
+Now, we can see that these higher order differential equations correspond to higher degree of freedom systems. In this case, our second order system is a 2 degree of freedom system. You need to know the value of $$y_1$$ and $$y_2$$ in order to know the future state of the system. To explore the impact of these higher degree of freedom systems, let's look at the linear second order system. This system is,
 
-$${dy_1}/{dt} = a+by_1+cy_2$$
+$$\frac{dy_1}{dt} = a+by_1+cy_2$$
 
-$${dy_2}/{dt} = d+ey_1+fy_2$$
+$$\frac{dy_2}{dt} = d+ey_1+fy_2$$
 
 let
 
 $$z = a+by_1+cy_2$$
 
-$${dy_1}/{dt} = z$$
+$$\frac{dy_1}{dt} = z$$
 
-$${dz}/{dt} = b{dy_1}/{dt}+c{dy_2}/{dt} = cd-fa+(ce-fb)y_1+(f+b)z$$
+$$\frac{dz}{dt} = b\frac{dy_1}{dt}+c\frac{dy_2}{dt} = cd-fa+(ce-fb)y_1+(f+b)z$$
 
 which gives:
 
-$${d^2y_1}/{dt^2} = cd-fa+(ce-fb)y_1+(f+b){dy_1}/{dt}$$
+$$\frac{d^2y_1}{dt^2} = cd-fa+(ce-fb)y_1+(f+b)\frac{dy_1}{dt}$$
 
-Solving this equation gives us a decaying oscillation. 
+Solving this equation gives us an exponentially growing, or decaying oscillation. We can relabel the equation as: 
+
+$$\frac{d^2y_1}{dt^2} = A + B y_1 + C \frac{dy_1}{dt}$$
+
+In this plot, the initial value is 1 and the initial rate of change is 0.
 
 <style>
 .control {
@@ -59,19 +63,19 @@ Solving this equation gives us a decaying oscillation.
 
 <div class="control">
   a
-  <input type="range" id="a" min="-5" max="5" step="0.1" value="0">
+  <input type="range" id="A" min="-5" max="5" step="0.1" value="0">
   <span class="value" id="aVal">0</span>
 </div>
 
 <div class="control">
   b
-  <input type="range" id="b" min="-5" max="5" step="0.1" value="-1">
+  <input type="range" id="B" min="-5" max="5" step="0.1" value="-1">
   <span class="value" id="bVal">-1</span>
 </div>
 
 <div class="control">
   c
-  <input type="range" id="c" min="-5" max="5" step="0.1" value="0">
+  <input type="range" id="C" min="-5" max="5" step="0.1" value="0">
   <span class="value" id="cVal">0</span>
 </div>
 
@@ -165,8 +169,7 @@ function updatePlot() {
 
 updatePlot();
 </script>
-```
 
-It turns out that no matter how non-linear you make your 1-DOF model, you can never obtain oscillations. Notably however, there are states in which this second order equation can give exponential behavior - part of why the exponential behavior is so common. So if a phenomenon is ever oscillatory, it's oscillatory because there are more than one degree of freedom in the underlying system. Similar insights can be made about higher-order systems. By understanding the degrees of freedom which underpin a system allows you to understand how it will behave. The number of degrees of freedom is the fundamental number which defines the qualitative behavior of the system.
+It turns out that no matter how non-linear you make your 1-DOF model, oscillations like the ones here will never occur. Usually, when developing a model of a system, replicating qualitative behavior is the most important factor. So, being able to tie qualitative behavior to an underlying mathematical structure is extremely useful. To summarize - if a phenomenon is ever oscillatory, it's oscillatory because there are more than one degree of freedom in the underlying system. Similar insights can be made about higher-order systems and the qualitative behavior they show.
 
-So, I've talked about systems which vary over time (or any other single dimension), but many important physical problems don't just vary over one dimension, instead, they vary over many. One possible instance of this would be the variation of a field over space and time. The key issue here is that often these fields are not just a single number, but are instead a vector or tensor object. If we want to apply the same type of analysis to problems which vary over space and time, it is key to understand the properties of these other mathematical objects.
+So, I've talked about systems which vary over time (or any other single dimension), but many important physical problems don't just vary over one dimension, instead, they vary over many. It's illuminating to recognize that the number of degrees of freedom that a problem has is important when working with problems which vary over a single variable, but the mathematics involved is simple enough that it doesn't motivate any new work. The established mathematical understanding of ordinary differential equations is essentially complete from this perspective. But, consider instead, the variation of a field over space *and* time. In this case, the degrees of freedom for a given problem are usually not single scalar fields represented by a single number. Instead, they're generally represented by vectors or tensor objects. Furthermore, the variation over multiple dimensions introduces complexity which ultimately requires new math in order to fully appreciate. Throughout this blog, I'm hoping to share some of that math, and apply it to common problems in continuum mechanics.
