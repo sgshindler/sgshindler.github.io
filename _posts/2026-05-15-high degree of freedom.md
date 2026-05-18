@@ -63,19 +63,19 @@ In this plot, the initial value is 1 and the initial rate of change is 0.
 
 <div class="control">
   a
-  <input type="range" id="A" min="-5" max="5" step="0.1" value="0">
+  <input type="range" id="a" min="-5" max="5" step="0.1" value="0">
   <span class="value" id="aVal">0</span>
 </div>
 
 <div class="control">
   b
-  <input type="range" id="B" min="-5" max="5" step="0.1" value="-1">
+  <input type="range" id="b" min="-5" max="5" step="0.1" value="-1">
   <span class="value" id="bVal">-1</span>
 </div>
 
 <div class="control">
   c
-  <input type="range" id="C" min="-5" max="5" step="0.1" value="0">
+  <input type="range" id="c" min="-5" max="5" step="0.1" value="0">
   <span class="value" id="cVal">0</span>
 </div>
 
